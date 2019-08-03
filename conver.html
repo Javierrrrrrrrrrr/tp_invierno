@@ -1,0 +1,41 @@
+
+<label>Numero</label>
+<input id=dato name=dato>
+<br>
+<label>Base</label>
+<select id=baseo name=baseo>
+	<option>10</option>
+	<option>2</option>
+	<option>8</option>
+	<option>16</option>
+</select>
+<br>
+
+<label>Base a convertir</label>
+<select id=based name=based>
+	<option>10</option>
+	<option>2</option>
+	<option>8</option>
+	<option>16</option>
+</select>
+<br>
+
+<button onClick="convertir()">Convert</button>
+<div id=result></div>
+
+<script>
+
+function convertir() {
+	num = document.getElementById("dato").value;
+
+	var seleo = document.getElementById("baseo");
+	var itemo = seleo.options[seleo.selectedIndex].value;
+
+	var seled = document.getElementById("based");
+	var itemd = seled.options[seled.selectedIndex].value;
+
+	document.getElementById("result").innerHTML = parseInt(num, itemo).toString(itemd);
+}
+
+
+</script>

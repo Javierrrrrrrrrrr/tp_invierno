@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor Numerico v 1.0</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+	<script src="vieja.js"></script>
+</head>
+<body>
+	<h1 align=center>Conversor Numerico</h1>
+	<label>Numero</label>
+	<input type="text" id=dato name=dato>
+	<br>
+
+	<label>Base</label>
+	<select id=baseo name=baseo>
+		<option>10</option>
+		<option>2</option>
+		<option>8</option>
+		<option>16</option>
+	</select>
+	<br>
+
+	<label>Base a convertir</label>
+	<select id=based name=based>
+		<option>10</option>
+		<option>2</option>
+		<option>8</option>
+		<option>16</option>
+	</select>
+	<br>
+
+	<button onClick="convertir()">Convert</button>
+<!--
+	<button onClick="convertirV()">Convert</button>
+-->
+	<div id=resultado></div>
+
+</body>
+</html>
